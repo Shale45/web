@@ -1,0 +1,49 @@
+
+footer {
+  background-color: $blueish;
+  color: $pureWhite;
+  text-align: center;
+  padding: 20px;
+
+  h3 {
+    padding: 30px 0 20px;
+  }
+
+  .footer-div {
+    @media screen and (min-width: 768px) {
+      float: left;
+      width: 28%;
+      margin-left: 2.5%;
+      margin-right: 2.5%;
+      margin-bottom: 100px;
+    }
+  }
+
+  .fab {
+    display: inline-block;
+    border: 1px solid $pureWhite;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+
+  .last1 {
+    padding: 60px 0 0;
+    margin: 0;
+  }
+
+  .last1::before {
+    @media screen and (min-width: 768px) {
+      content: "";
+      clear: both;
+      display: table;
+    }
+  }
+  
+  .last2 {
+    font-size: 0.7em;
+    color: gray;
+  }
+}

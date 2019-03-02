@@ -1,0 +1,20 @@
+
+#navbar {
+  color: $pureWhite;
+  font-weight: bold;
+  a {
+    color: $pureWhite;
+  }
+}
+
+.navbar-toggler {
+  background-color: $greenish;
+  color: $pureWhite !important;
+  @media screen and (min-width: 768px) {
+    background-color: $blueish;
+  }
+  
+  .menu {
+    font-weight: bold;
+  }
+}

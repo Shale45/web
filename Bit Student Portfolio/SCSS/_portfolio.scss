@@ -1,0 +1,38 @@
+
+#portfolio {
+
+  width: 100%;
+  padding: 50px;
+
+  .fa-star {
+    width: 1.5em;
+  }
+
+  div {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .portfolio-images {
+
+    img {
+      display: block;
+      max-width: 95%;
+      margin: 0 auto;
+      padding: 10px 0;
+
+      @media screen and (min-width: 768px) {
+        float: left;
+        width: 45%;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+    }
+      @media screen and (min-width: 992px) {
+        float: left;
+        width: 28%;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+    }
+    }
+  }
+}

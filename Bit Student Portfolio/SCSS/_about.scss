@@ -1,0 +1,44 @@
+
+#about {
+  background-color: $greenish;
+  color: $pureWhite;
+  padding: 10px 0 50px 0;
+
+  h2 {
+    padding: 50px 0 10px 0;
+  }
+
+  div {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  p {
+    padding: 0 15px;
+    @media screen and (min-width: 992px) {
+      float: left;
+      width: 45%;
+      margin-left: 2.5%;
+      margin-right: 2.5%;
+      margin-bottom: 20px;
+    }
+  }
+
+  .clearing-div::after {
+    @media screen and (min-width: 992px) {
+      content: "";
+      clear: both;
+      display: table;
+    }
+  }
+
+  .clear-button {
+    display: block;
+    border: 1.5px solid $pureWhite;
+    border-radius: 5px;
+    background-color: $greenish;
+    color: $pureWhite;
+    padding: 7px 10px;
+    margin: 0 auto;
+  }
+}

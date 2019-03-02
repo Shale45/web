@@ -1,0 +1,32 @@
+
+#contact {
+  padding: 50px 30px;
+
+  div {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  form {
+    font-size: 1.2em;
+
+    input, textarea {
+      display: block;
+      width: 100%;
+      font-size: 1.2em;
+      border: none; 
+      border-width: 0; 
+      box-shadow: none;
+      border-color: $pureWhite;
+      border-bottom: 1px solid rgb(153, 153, 153);
+    }
+
+    button {
+      color: $pureWhite;
+      background-color: $greenish;
+      margin-top: 10px;
+      padding: 5px 15px;
+      border-radius: 5px;
+    }
+  }
+}
