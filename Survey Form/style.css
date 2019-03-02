@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+  background-color: rgb(142, 202, 202);
+}
+
+#title, #description {
+  text-align: center;
+}
+
+#title, #description {
+  padding-top: 30px; 
+}
+
+#main {
+  width: 75%;
+  margin: 0 auto;
+  background-color: antiquewhite;
+  border-radius: 5px;
+  padding-bottom: 20px;
+}
+
+#left, #right {
+  display: inline-block;
+  width: 40%;
+  height: auto;
+}
+
+#left {
+  margin: 1% 1% 1% 8%;
+  text-align: right;
+  vertical-align: top;
+}
+
+#left p {
+  vertical-align: top;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+#right {
+  margin: 1% 8% 1% 1%;
+  text-align: left;
+}
+
+#name, #email, #number {
+  width: 80%;
+}
+
+#submit {
+  display: block;
+  background-color: rgb(33, 33, 199);
+  padding: 15px 30px;
+  margin: 20px auto;
+  color: aliceblue;
+  font-size: 1.1em;
+  border-radius: 10px;
+}
+
+#right textarea {
+  width: 60%;
+  height: auto;
+}
