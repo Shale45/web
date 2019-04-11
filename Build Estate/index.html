@@ -17,7 +17,7 @@
       <div class="banner-text">
         <h1>WE SHAPE OUR BUILDINGS <br> THEREAFTER THEY SHAPE US</h1>
         <button>
-          <a href="#home">Read More</a>
+          <a href="#about">Read More</a>
         </button>
       </div>
     </div>
@@ -35,7 +35,7 @@
           <a href="#about">ABOUT</a>
         </li>
         <li>
-          <a href="#services">SERVICES</a>
+          <a href="#about">SERVICES</a>
         </li>
         <li>
           <a href="#contact">CONTACT US</a>
@@ -48,7 +48,7 @@
 
     <section id="about">
       <h2>Who we are</h2>
-      <img class="decorative-line" src="images/icons/decorative-line.png" alt="Decorative Line">
+      <hr class="styled">
       <div class="about-fragment">
         <h3>Welcome To Our Build Estate</h3>
         <p>
@@ -84,8 +84,8 @@
 
     <section id="posts">
       <h2>What people says</h2>
-      <img class="decorative-line" src="images/icons/decorative-line.png" alt="Decorative Line">
-      <article>
+      <hr class="styled">
+      <article class="posts-article">
         <div class="posts">
           <img src="images/t1.jpg" alt="Williamson says about us">
           <h4>
@@ -139,7 +139,7 @@
 
     <section id="contact">
       <h2>Get in touch with us</h2>
-      <img class="decorative-line" src="images/icons/decorative-line.png" alt="Decorative Line">
+      <hr class="styled styled-down">
       <div class="contact contact-fragments">
         <h3>CONTACT US</h3>
         <p>
@@ -175,11 +175,11 @@
 
     <section id="mail-us">
       <h2>Mail us</h2>
-      <img class="decorative-line" src="images/icons/decorative-line.png" alt="Decorative Line">
+      <hr class="styled styled-down">
       <form action="action.php" method="POST">
-        <input id="name" type="text" name="name" value="Name">
-        <input id="email" type="email" name="email" value="Email">
-        <input id="telephone" type="text" name="telephone" value="Telephone">
+        <input id="name" type="text" name="name" value="" placeholder="Name">
+        <input id="email" type="email" name="email" value="" placeholder="Email">
+        <input id="telephone" type="number" name="telephone" value="Telephone" placeholder="Telephone">
         <br>
         <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
         <br>
@@ -190,12 +190,12 @@
     <footer>
       <div class="footer-ul">
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
           <li><a href="#">Stats</a></li>
-          <li><a href="#">Agents</a></li>
-          <li><a href="#">Testimonials</a></li>
+          <li><a href="#posts">Agents</a></li>
+          <li><a href="#posts">Testimonials</a></li>
         </ul>
       </div>
       <p>&copy 2017 Build Estate. All Rights Reserved</p>

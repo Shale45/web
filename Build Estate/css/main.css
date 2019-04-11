@@ -40,6 +40,11 @@ body {
   border-radius: 30px;
   font-size: 20px;
   margin-top: 20px;
+  border:2px solid #4e6096;
+}
+
+.banner-text button:hover {
+  background-color: #0095ff;
 }
 
 a {
@@ -63,7 +68,7 @@ a {
 }
 
 nav {
-  color: white;
+  color: #ffffff;
   margin: 20px;
   text-align: center;
 }
@@ -72,12 +77,23 @@ nav ul {
   padding: 0;
 }
 
-nav ul li {
+nav li {
+  width: 100%;
+}
+
+nav li a {
+  display: block;
   background-color: #55c3fa;
   padding: 15px 10px;
   font-size: 20px;
   list-style: none;
   font-weight: 600;
+  width: 100%;
+}
+
+nav li a:hover {
+  color: #059fec;
+  background-color: #ffffff;
 }
 
 h2 {
@@ -88,6 +104,20 @@ h2 {
 
 /* ~~ ABOUT ~~ */
 
+hr.styled {
+  height: 4px;
+  width: 60%;
+  border: 1;
+  box-shadow: inset 0 9px 9px -3px rgba(11, 99, 184, 0.8);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  }
+
+  hr.styled-down {
+    margin-bottom: 40px;
+  }
+
 #about h2 {
   padding-top: 10px;
 }
@@ -95,13 +125,7 @@ h2 {
 #about h3 {
   color: #55c3fa;
   font-size: 30px;
-}
-
-.decorative-line {
-  display: block;
-  margin: 0 auto;
-  padding: 0px;
-  height: 60px;
+  text-align: center;
 }
 
 #about {
@@ -234,14 +258,35 @@ input, textarea {
   padding: 10px;
 }
 
-input[type="button"] {
-  display: block;
-  width: 120px;
-  background-color: orange;
-  color: white;
-  border-radius: 8px;
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=number]:focus, 
+textarea:focus {
+  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+  border: 1px solid rgba(81, 203, 238, 1);
 }
 
+input[type="button"] {
+  color: white;
+  letter-spacing: 3px;
+  background-color: #0080ff;
+  width: 150px;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 20px;
+  margin-top: 20px;
+ 
+  border:2px solid #4e6096;
+  overflow: hidden;
+}
+
+input[type="button"]:hover {
+  background-color: #0095ff;
+}
+
+input[type="button"]:focus {
+  outline: none;
+}
 /* ~~ FOOTER ~~ */
 
 footer {
@@ -313,7 +358,10 @@ padding: 50px 0;
   nav ul {
     height: 100%;
     background-color: transparent;
+    margin-top: 22px;
   }
+
+
 
   .navigation-list {
     float: right;
@@ -322,16 +370,36 @@ padding: 50px 0;
     padding-right: 10px;
   }
 
-  nav ul li {
+  nav li {
     background-color: transparent;
     float: left;
-    padding: 12px 10px;
     font-size: 15px;
     list-style: none;
-    font-weight: 600;
+    font-weight: normal;
+    width: inherit;
+  }
+
+  nav li a {
+    display: inline;
+    background-color: transparent;
+    font-size: 18px;
+    
+  }
+
+  nav ul li:hover {
+    background-color: transparent;
+  }
+  
+  nav li a:hover {
+    background-color: inherit;
+    color: #059fec;
   }
 
   /* ~~ ABOUT ~~ */
+
+  #about {
+    margin: 90px auto 0 auto;
+  }
 
   .about-fragment {
     float: left;
@@ -347,14 +415,17 @@ padding: 50px 0;
   /* ~~ POSTS ~~ */
 
   #posts {
-    position: apsolute;
-    margin: 0 auto;
-    padding: 2% 5%;
+    margin: 30px auto 0 auto;
+    padding: 5%;
+  }
+
+  .posts-article {
+    margin-top: 30px;
   }
 
   .posts {
     float: left;
-    width: 45%;
+    width: 47%;
     margin: 10px;
     padding: 20px;
   }
@@ -426,12 +497,18 @@ padding: 50px 0;
     position: relative;
   }
 
+  h1 {
+    font-size: 3em;
+    line-height: 1.5em;
+  }
+
   h2 {
     font-size: 60px;
   }
 
   .banner {
     min-height: 770px;
+    height: 100vh;
   }
 
   .banner-text button {
@@ -441,8 +518,13 @@ padding: 50px 0;
   /* ~~ ABOUT ~~ */
 
   #about {
-    width: 85%;
+    width: 90%;
   }
+
+  #about h3{
+    padding-top: 15px; 
+  }
+
   .about {
     margin: 0 auto;
     padding-top: 100px;  
@@ -450,8 +532,8 @@ padding: 50px 0;
 
   .about-fragment {
     float: left;
-    width: 33.3%;
-    padding: 1%;
+    width: 33%;
+    padding: 10px;
   }
 
   #about::after {
@@ -486,5 +568,9 @@ padding: 50px 0;
     content: "";
     clear: both;
     display: table;
+  }
+
+  input[type="button"] {
+    width: 200px;
   }
 } 
