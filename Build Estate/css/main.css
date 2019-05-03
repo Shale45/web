@@ -1,20 +1,39 @@
 * {
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
+html,
 body {
   width: 100%;
   margin: 0 auto;
+  font-family: "Roboto", sans-serif;
 }
 
-#about, #posts {
+#about,
+#posts {
   margin: 0 auto;
 }
 
+a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+h2 {
+  text-align: center;
+  font-weight: 300;
+  font-size: 2rem;
+  padding-top: 40px;
+  padding-bottom: 10px;
+
+}
+
+
+/* ---BANER --- */
 .banner {
   background-image: url(../images/banner3.jpg);
   background-repeat: no-repeat;
+  background-position: center center;
   width: 100%;
   min-height: 400px;
   background-size: cover;
@@ -25,46 +44,48 @@ body {
   text-align: center;
   vertical-align: middle;
   height: 80%;
+  font-size: 0.6rem;
+  font-weight: 300;
   display: table-cell;
 }
 
-.banner-text h1, .banner-text button {
-  color: white;
+.banner-text h1,
+.banner-text button {
+  color: rgb(255, 255, 255);
   letter-spacing: 3px;
 }
 
 .banner-text button {
   background-color: #0080ff;
-  width: 30%;
+  width: 35%;
   padding: 10px 20px;
   border-radius: 30px;
-  font-size: 20px;
+  font-size: 0.6rem;
   margin-top: 20px;
-  border:2px solid #4e6096;
+  border: 2px solid #0080ff;
 }
 
 .banner-text button:hover {
   background-color: #0095ff;
+  border: 2px solid #0095ff;
 }
 
-a {
-  text-decoration: none;
-  color: white;
-}
+
+/* --- NAVIGATION --- */
 .main-h2 {
-  margin: 40px auto;
+  margin: 40px auto 20px auto;
   padding: 5px 10px;
-  color: grey;
+  color: rgb(128, 128, 128);
   text-align: center;
   font-size: 40px;
 }
 
 .main-h2 span {
   display: inline-block;
-  color: orange;
-  border: 6px solid gray;
+  color: rgb(255, 165, 0);
+  border: 6px solid rgb(128, 128, 128);
   border-right: 0;
-  padding-left: 20px; 
+  padding-left: 20px;
 }
 
 nav {
@@ -74,76 +95,86 @@ nav {
 }
 
 nav ul {
-  padding: 0;
+  padding: 10px 0;
 }
 
-nav li {
+nav ul li {
   width: 100%;
 }
 
-nav li a {
+nav ul li a:link,
+nav ul li a:visited {
   display: block;
   background-color: #55c3fa;
-  padding: 15px 10px;
-  font-size: 20px;
+  padding: 10px;
+  font-size: 1rem;
   list-style: none;
   font-weight: 600;
   width: 100%;
 }
 
-nav li a:hover {
+nav ul li a:hover,
+nav ul li a:active {
   color: #059fec;
+  color: rgb(255, 165, 0);
   background-color: #ffffff;
 }
 
-h2 {
-  text-align: center;
-  font-size: 40px;
-  padding: 100px 0 0 0;
-}
 
 /* ~~ ABOUT ~~ */
+#about {
+  /* padding: 10px 20px; */
+  margin-top: 60px;
+  background-color: rgb(245, 245, 245);
+}
+
+.container {
+  padding: 20px 40px;
+}
 
 hr.styled {
   height: 4px;
-  width: 60%;
+  width: 30%;
   border: 1;
   box-shadow: inset 0 9px 9px -3px rgba(11, 99, 184, 0.8);
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
-  }
+}
 
-  hr.styled-down {
-    margin-bottom: 40px;
-  }
-
-#about h2 {
-  padding-top: 10px;
+hr.styled-down {
+  margin-bottom: 40px;
 }
 
 #about h3 {
   color: #55c3fa;
-  font-size: 30px;
-  text-align: center;
-}
-
-#about {
-  padding: 0 20px;
+  padding-left: 0;
+  font-size: 20px;
+  text-align: left;
+  font-weight: 300;
 }
 
 #about p {
-  padding: 20px 20px;
+  padding: 20px 0;
+}
+
+#about ul {
+  display: block;
+  list-style-type: none;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0;
 }
 
 #about ul li {
-  list-style-type: none;
-  padding: 10px 0;
+  padding: 7px 0;
 }
 
 #about ul li::before {
   content: ' \27A9';
-  color: orange;
+  color: rgb(255, 165, 0);
 }
 
 .about {
@@ -156,12 +187,8 @@ hr.styled {
 
 /* ~~ POSTS ~~ */
 
-#posts h2 {
-  padding: 20px 0;
-}
-
 .posts {
-  background:  #55c3fa;
+  background: #55c3fa;
   margin: 40px;
   padding: 40px;
   color: white;
@@ -169,11 +196,11 @@ hr.styled {
 }
 
 .posts img {
-  border: 4px solid white;
+  border: 4px solid rgb(255, 255, 255);
   border-radius: 50%;
   padding: 5px;
-  width: 30%; 
-  vertical-align: middle; 
+  width: 30%;
+  vertical-align: middle;
 }
 
 .posts h4 {
@@ -187,7 +214,7 @@ hr.styled {
 }
 
 .posts h4 span {
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 .posts p {
@@ -196,24 +223,22 @@ hr.styled {
 
 /* ~~ CONTACT ~~ */
 
-#contact {
-  box-sizing: border-box;
-}
-
 .contact-fragments {
   width: 100%;
-  color: white;
+  color: rgb(255, 255, 255);
   text-align: center;
 }
 
-.contact, .connect, .address {
+.contact,
+.connect,
+.address {
   min-height: 120px;
   box-sizing: border-box;
   margin: 0;
   overflow: hidden;
 }
 
-#contact h3{
+#contact h3 {
   padding-top: 20px;
   margin: 0;
 }
@@ -229,6 +254,7 @@ hr.styled {
 #contact i {
   margin-right: 8px;
 }
+
 .address {
   background-color: #0066ff;
 }
@@ -250,71 +276,75 @@ form {
   margin: 10px auto;
 }
 
-input, textarea {
+input,
+textarea {
   display: block;
   width: 100%;
-  border: 1px solid black;
+  border: 1px solid rgb(43, 43, 43);
   margin: 10px 0px 20px 0px;
   padding: 10px;
 }
 
 input[type=text]:focus,
 input[type=email]:focus,
-input[type=number]:focus, 
+input[type=number]:focus,
 textarea:focus {
-  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
-  border: 1px solid rgba(81, 203, 238, 1);
+  box-shadow: 0 0 5px rgb(255, 165, 0, 1);
+  border: 1px solid rgb(255, 165, 0, 1);
 }
 
 input[type="button"] {
-  color: white;
+  color: rgb(255, 255, 255);
   letter-spacing: 3px;
   background-color: #0080ff;
+  background-color: rgb(255, 165, 0);
   width: 150px;
   padding: 10px 20px;
   border-radius: 30px;
   font-size: 20px;
-  margin-top: 20px;
- 
-  border:2px solid #4e6096;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  border: 2px solid rgb(255, 165, 0);
   overflow: hidden;
 }
 
 input[type="button"]:hover {
-  background-color: #0095ff;
+  background-color: rgb(255, 173, 21);
 }
 
 input[type="button"]:focus {
   outline: none;
 }
+
 /* ~~ FOOTER ~~ */
 
 footer {
-  background-color: #1a1a1a;
-  color: white;
-   height: 200px;
+  background-color: #303030;
+  color: rgb(255, 255, 255);
+  height: 200px;
 }
 
 .footer-ul {
   margin: 30px o;
 }
+
 .footer-ul ul {
-text-align: center;
-color: white;
-padding: 50px 0;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  padding: 50px 0;
 }
 
 .footer-ul li {
   display: inline-block;
 }
 
-.footer-ul a {
+.footer-ul li a {
   text-decoration: none;
-  padding: 20px;
-  color: white;
+  padding: 20px 10px;
+  color: rgb(255, 255, 255);
 }
 
- footer p {
+footer p {
   text-align: center;
 }
 
@@ -329,12 +359,14 @@ padding: 50px 0;
     min-height: 550px;
   }
 
-  nav {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    min-height: 80px;
-    overflow: hidden;
+  .banner-text {
+    font-size: 1rem;
+  }
+
+  .banner-text button {
+    max-width: 220px;
+    font-size: 0.8rem;
+    width: 20%;
   }
 
   .main-h2 {
@@ -342,17 +374,32 @@ padding: 50px 0;
     top: 0;
     left: 10px;
     margin-top: 20px;
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 30px;
   }
 
   .main-h2 span {
-    border: 6px solid white;
-    border-right: 0; 
+    border: 6px solid rgb(255, 255, 255);
+    border-right: 0;
   }
 
-  .banner-text button {
-    max-width: 220px;
+  nav {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    min-height: 80px;
+    overflow: hidden;
+    margin: 0;
+    background-color: transparent;
+  }
+
+  .navigation-list {
+    float: right;
+    margin-top: 7px;
+    margin-right: 20px;
+    padding-right: 10px;
+    background-color: transparent;
+
   }
 
   nav ul {
@@ -361,61 +408,64 @@ padding: 50px 0;
     margin-top: 22px;
   }
 
-
-
-  .navigation-list {
-    float: right;
-    margin-top: 15px;
-    margin-right: 20px;
-    padding-right: 10px;
-  }
-
-  nav li {
+  nav ul li {
     background-color: transparent;
     float: left;
     font-size: 15px;
     list-style: none;
-    font-weight: normal;
+    font-weight: 300;
+    letter-spacing: 1px;
     width: inherit;
   }
 
-  nav li a {
+  nav ul li a:link,
+  nav ul li a:visited {
     display: inline;
     background-color: transparent;
-    font-size: 18px;
-    
+    font-size: .8rem;
+    margin: 10px;
+    padding: 0;
+    padding-bottom: 5px;
+    margin: 10px;
   }
 
   nav ul li:hover {
     background-color: transparent;
   }
-  
-  nav li a:hover {
+
+  nav ul li a:hover,
+  nav ul li a:active {
     background-color: inherit;
-    color: #059fec;
+    border-bottom: 2px solid rgb(255, 165, 0);
   }
 
   /* ~~ ABOUT ~~ */
 
   #about {
-    margin: 90px auto 0 auto;
+    margin: 0 auto;
+  }
+
+  .container {
+    padding: 40px;
   }
 
   .about-fragment {
     float: left;
-    width: 49.9%
+    width: 49.9%;
+    padding: 2%;
   }
 
   #about::after {
     content: "";
     clear: both;
     display: table;
+    padding-bottom: 40px;
   }
 
   /* ~~ POSTS ~~ */
 
   #posts {
-    margin: 30px auto 0 auto;
+    margin: 0 auto;
     padding: 5%;
   }
 
@@ -439,21 +489,17 @@ padding: 50px 0;
   /* ~~ CONTACT ~~ */
 
   .contact-fragments {
+    float: left;
     width: 49.9%;
+    padding-top: 40px;
     min-height: 200px;
-    color: white;
+    color: rgb(255, 255, 255);
     text-align: center;
   }
 
   .house img {
     height: 150px;
     width: auto;
-  }
-
-  .contact-fragments {
-    float: left;
-    width: 49.9%;
-    padding-top: 40px;
   }
 
   .house {
@@ -503,7 +549,7 @@ padding: 50px 0;
   }
 
   h2 {
-    font-size: 60px;
+    font-size: 40px;
   }
 
   .banner {
@@ -512,28 +558,46 @@ padding: 50px 0;
   }
 
   .banner-text button {
-    margin-top: 150px;;
+    margin-top: 40px;
+    ;
   }
-  
+
   /* ~~ ABOUT ~~ */
 
   #about {
-    width: 90%;
+    width: 100%;
   }
 
-  #about h3{
-    padding-top: 15px; 
+  .container {
+    padding-top: 0;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  h2 {
+    margin-block-start: 0;
+    margin-block-end: 0;
+  }
+
+  #about h3 {
+    padding-top: 15px;
   }
 
   .about {
     margin: 0 auto;
-    padding-top: 100px;  
+    padding-top: 100px;
   }
 
   .about-fragment {
     float: left;
-    width: 33%;
-    padding: 10px;
+    width: 32%;
+    padding: 3%;
+    margin: 0 auto;
+  }
+
+  .about-fragment p,
+  .about-fragment li {
+    font-size: 0.7rem;
   }
 
   #about::after {
@@ -543,7 +607,7 @@ padding: 50px 0;
   }
 
   .about-fragment img {
-    padding-top: 50px;
+    padding-top: 40px;
   }
 
   #about h2 {
@@ -553,7 +617,7 @@ padding: 50px 0;
   /* ~~ POSTS ~~ */
 
   #posts {
-    margin: 0 auto;
+    margin: 30px auto;
     padding: 2% 5%;
   }
 
@@ -573,4 +637,73 @@ padding: 50px 0;
   input[type="button"] {
     width: 200px;
   }
-} 
+
+
+  /* ~~ CONTACT ~~ */
+  #contact {
+    width: 100%;
+  }
+
+  .contact-fragments {
+    width: 25%;
+    padding-top: 40px;
+    min-height: 200px;
+    margin: 0 auto;
+    font-size: .7rem;
+  }
+
+  .contact-fragments h3 {
+    font-size: 1rem;
+    letter-spacing: 1px;
+  }
+
+  .house img {
+    height: 130px;
+    width: auto;
+  }
+
+  .house {
+    padding: 40px 0 0 0;
+    min-width: 25%;
+  }
+
+  .house::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  /* ~~ MAIL-US ~~ */
+
+  #mail-us {
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+  }
+}
+
+
+/* ~~ Desktops Large ~~ */
+
+@media only screen and (min-width: 1200px) {
+
+  h2 {
+    font-size: 50px;
+  }
+
+  nav ul li a:link,
+  nav ul li a:visited,
+  nav ul li a:hover,
+  nav ul li a:active {
+    font-size: 1rem;
+  }
+
+  .about-fragment p,
+  .about-fragment li {
+    font-size: .9rem;
+  }
+
+  #about .container h3 {
+    font-size: 1.2rem;
+  }
+}
