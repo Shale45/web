@@ -41,4 +41,9 @@
     padding: 7px 10px;
     margin: 0 auto;
   }
+
+  .clear-button:hover {
+    color: $greenish;
+    background-color: $pureWhite;
+  }
 }

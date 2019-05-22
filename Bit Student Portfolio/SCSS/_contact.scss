@@ -1,32 +1,45 @@
-
 #contact {
-  padding: 50px 30px;
+  padding: 20px 50px 50px 50px;
 
   div {
     text-align: center;
     padding-bottom: 20px;
   }
 
-  form {
+  .contact {
     font-size: 1.2em;
 
-    input, textarea {
+    input,
+    textarea {
       display: block;
       width: 100%;
       font-size: 1.2em;
-      border: none; 
-      border-width: 0; 
+      border: none;
+      border-width: 0;
       box-shadow: none;
       border-color: $pureWhite;
       border-bottom: 1px solid rgb(153, 153, 153);
+
+    }
+
+    input:focus,
+    textarea:focus {
+      outline-color: $greenish;
     }
 
     button {
       color: $pureWhite;
       background-color: $greenish;
       margin-top: 10px;
-      padding: 5px 15px;
+      padding: 5px 30px;
+      border: 1px solid $pureWhite;
       border-radius: 5px;
+      outline: none;
+      overflow: hidden;
+    }
+
+    button:hover {
+      background-color: $greenish-darker;
     }
   }
 }

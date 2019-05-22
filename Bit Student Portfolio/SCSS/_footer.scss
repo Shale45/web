@@ -27,6 +27,11 @@ footer {
     width: 50px;
     padding: 15px;
     margin-bottom: 20px;
+    color: $pureWhite;
+  }
+
+  .fab:hover {
+    color: $greenish;
   }
 
   .last1 {

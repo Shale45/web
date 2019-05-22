@@ -1,8 +1,44 @@
+section {
+  margin: 50px 0; }
+
+h2, h3 {
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center; }
+
+h3 {
+  font-size: 1.5em; }
+
+#heading {
+  background-color: #18bc9c;
+  color: #ffffff; }
+  #heading img, #heading h1, #heading p, #heading div {
+    display: block;
+    margin: 0 auto;
+    text-align: center; }
+  #heading img {
+    padding: 40px 0; }
+  #heading h1 {
+    font-weight: bold;
+    padding-bottom: 20px; }
+  #heading p {
+    padding: 20px 0 50px 0;
+    font-size: 1.2em;
+    font-weight: bold; }
+
+#heading {
+  margin: 0;
+  padding-top: 50px; }
+
 #navbar {
   color: #ffffff;
   font-weight: bold; }
-  #navbar a {
+  #navbar a:link,
+  #navbar a:visited {
     color: #ffffff; }
+  #navbar a:hover,
+  #navbar a:active {
+    color: #18bc9c; }
 
 .navbar-toggler {
   background-color: #18bc9c;
@@ -15,29 +51,34 @@
 
 #portfolio {
   width: 100%;
-  padding: 50px; }
+  padding: 20px; }
   #portfolio .fa-star {
     width: 1.5em; }
   #portfolio div {
     margin: 0 auto;
     text-align: center; }
-  #portfolio .portfolio-images img {
-    display: block;
-    max-width: 95%;
-    margin: 0 auto;
-    padding: 10px 0; }
-    @media screen and (min-width: 768px) {
-      #portfolio .portfolio-images img {
-        float: left;
-        width: 45%;
-        margin-left: 2.5%;
-        margin-right: 2.5%; } }
-    @media screen and (min-width: 992px) {
-      #portfolio .portfolio-images img {
-        float: left;
-        width: 28%;
-        margin-left: 2.5%;
-        margin-right: 2.5%; } }
+  #portfolio .portfolio-images {
+    padding-top: 20px; }
+    #portfolio .portfolio-images img {
+      display: block;
+      max-width: 95%;
+      margin: 10px auto;
+      padding: 10px 0;
+      transition: all .3s; }
+      #portfolio .portfolio-images img:hover {
+        transform: scale(1.1); }
+      @media screen and (min-width: 768px) {
+        #portfolio .portfolio-images img {
+          float: left;
+          width: 45%;
+          margin-left: 2.5%;
+          margin-right: 2.5%; } }
+      @media screen and (min-width: 992px) {
+        #portfolio .portfolio-images img {
+          float: left;
+          width: 28%;
+          margin-left: 2.5%;
+          margin-right: 2.5%; } }
 
 #about {
   background-color: #18bc9c;
@@ -70,15 +111,19 @@
     color: #ffffff;
     padding: 7px 10px;
     margin: 0 auto; }
+  #about .clear-button:hover {
+    color: #18bc9c;
+    background-color: #ffffff; }
 
 #contact {
-  padding: 50px 30px; }
+  padding: 20px 50px 50px 50px; }
   #contact div {
     text-align: center;
     padding-bottom: 20px; }
-  #contact form {
+  #contact .contact {
     font-size: 1.2em; }
-    #contact form input, #contact form textarea {
+    #contact .contact input,
+    #contact .contact textarea {
       display: block;
       width: 100%;
       font-size: 1.2em;
@@ -87,12 +132,20 @@
       box-shadow: none;
       border-color: #ffffff;
       border-bottom: 1px solid #999999; }
-    #contact form button {
+    #contact .contact input:focus,
+    #contact .contact textarea:focus {
+      outline-color: #18bc9c; }
+    #contact .contact button {
       color: #ffffff;
       background-color: #18bc9c;
       margin-top: 10px;
-      padding: 5px 15px;
-      border-radius: 5px; }
+      padding: 5px 30px;
+      border: 1px solid #ffffff;
+      border-radius: 5px;
+      outline: none;
+      overflow: hidden; }
+    #contact .contact button:hover {
+      background-color: #0da889; }
 
 footer {
   background-color: #2c3e50;
@@ -115,7 +168,10 @@ footer {
     height: 50px;
     width: 50px;
     padding: 15px;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    color: #ffffff; }
+  footer .fab:hover {
+    color: #18bc9c; }
   footer .last1 {
     padding: 60px 0 0;
     margin: 0; }
@@ -127,30 +183,5 @@ footer {
   footer .last2 {
     font-size: 0.7em;
     color: gray; }
-
-h2, h3 {
-  font-size: 2em;
-  font-weight: bold;
-  text-align: center; }
-
-h3 {
-  font-size: 1.5em; }
-
-#heading {
-  background-color: #18bc9c;
-  color: #ffffff; }
-  #heading img, #heading h1, #heading p, #heading div {
-    display: block;
-    margin: 0 auto;
-    text-align: center; }
-  #heading img {
-    padding: 40px 0; }
-  #heading h1 {
-    font-weight: bold;
-    padding-bottom: 20px; }
-  #heading p {
-    padding: 20px 0 50px 0;
-    font-size: 1.2em;
-    font-weight: bold; }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,43 +1,8 @@
 
 @import "_variables";
+@import "_base";
 @import "_navbar";
 @import "_portfolio";
 @import "_about";
 @import "_contact";
 @import "_footer";
-
-h2, h3{
-  font-size: 2em;
-  font-weight: bold;
-  text-align: center;
-}
-
-h3 {
-  font-size: 1.5em;
-}
-
-#heading {
-  background-color: $greenish;
-  color: $pureWhite;
-
-  img, h1, p, div {
-    display: block;
-    margin: 0 auto; 
-    text-align: center;
-  }
-
-  img {
-    padding: 40px 0;
-  }
-
-  h1 {
-    font-weight: bold;
-    padding-bottom: 20px;
-  }
-
-  p {
-    padding: 20px 0 50px 0;
-    font-size: 1.2em;
-    font-weight: bold;
-  }
-}

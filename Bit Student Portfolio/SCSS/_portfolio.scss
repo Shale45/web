@@ -2,7 +2,7 @@
 #portfolio {
 
   width: 100%;
-  padding: 50px;
+  padding: 20px;
 
   .fa-star {
     width: 1.5em;
@@ -14,12 +14,18 @@
   }
 
   .portfolio-images {
+    padding-top: 20px;
 
     img {
       display: block;
       max-width: 95%;
-      margin: 0 auto;
+      margin: 10px auto;
       padding: 10px 0;
+      transition: all .3s;
+
+      &:hover {
+        transform: scale(1.1);
+      }
 
       @media screen and (min-width: 768px) {
         float: left;
